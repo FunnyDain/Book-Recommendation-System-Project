@@ -1,3 +1,3 @@
-# Book-Recommendation-System-Project
+# Movie-Recommendation-System-Project
 
 
