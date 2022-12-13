@@ -4,7 +4,6 @@ package com.moviecustom.board.entity;
 //spring data jap에서는 필수적으로 써야하는 클래스 형태
 
 import com.moviecustom.board.dto.BoardDTO;
-import lombok.CustomLog;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -45,5 +44,16 @@ public class BoardEntity extends BaseEntity{
         boardEntity.setBoardContents(boardDTO.getBoardContents());
         boardEntity.setBoardHits(0);        //기본값0으로 세팅
         return boardEntity;     //다 옮겨담으로 객체 return, 그럼 service에서
+    }
+
+    public static BoardEntity toUpdateEntity(BoardDTO boardDTO) {
+        BoardEntity boardEntity = new BoardEntity();
+        boardEntity.setId(boardDTO.getId());
+        boardEntity.setBoardWriter(boardDTO.getBoardWriter());
+        boardEntity.setBoardPass(boardDTO.getBoardPass());
+        boardEntity.setBoardTitle(boardDTO.getBoardTitle());
+        boardEntity.setBoardContents(boardDTO.getBoardContents());
+        boardEntity.setBoardHits(boardDTO.getBoardHits());
+        return boardEntity;
     }
 }
