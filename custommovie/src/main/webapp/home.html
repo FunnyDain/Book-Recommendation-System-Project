@@ -53,9 +53,65 @@
   <!--weather.css-->
   <link href="assets/css/weather.css" rel="stylesheet" />
 
+  <!--modal창-->
+  <link href="assets/css/modal.css" rel="stylesheet"/>
+
 </head>
 
 <body>
+<!--=========== 모달창 ============-->
+<div id="modalWin" class="modal" onclick="this.style.display='none'">
+  <!--Modal content-->
+  <div class="modal-content modalAni">
+
+    <div class="modal-header">
+      <span class="close">x</span>
+      <h3>Modal Header</h3>
+    </div>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/developer/알라딘.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/developer/어바웃타임.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/developer/엑시트.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text..</p>
+    </div>
+    <div clas="modal-footer">
+      <h4>Modal Footer</h4>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
   <div
@@ -454,32 +510,32 @@
         <p>오늘의 날씨는 <span class="changeColor" id="todayWeather"></span>이예요!</p>
       </div>
 
-    <div id="weatherBox">
-      <h2 id="geo"></h2>
-<!--      왼쪽 픽토그램-->
-      <div id="weatherFlexBox">
-        <div id="weatherLeft">
-          <h1 id="weatherImg"></h1>
+      <div id="weatherBox">
+        <h2 id="geo"></h2>
+        <!--      왼쪽 픽토그램-->
+        <div id="weatherFlexBox">
+          <div id="weatherLeft">
+            <h1 id="weatherImg"></h1>
+          </div>
+          <div id="weatherRight">
+            <h2 id="weatherTemp"></h2>
+            <p id="weatherDes"></p>
+            <p id="weatherHum"></p>
+            <p id="weatherWind"></p>
+          </div>
         </div>
-        <div id="weatherRight">
-          <h2 id="weatherTemp"></h2>
-          <p id="weatherDes"></p>
-          <p id="weatherHum"></p>
-          <p id="weatherWind"></p>
-        </div>
+        <p id="name"></p>
+        <!-- <h1><i class="fas fa-camera-retro"></i></h1>
+        <h1 class="a"><i class="fas fa-camera-retro"></i></h1> -->
+
+
+        <!--      <img id="img1"/>-->
+        <!--      <img id="img2"/>-->
+        <!--      <img id="img3"/>-->
+        <!--      <img id="img4"/>-->
+        <!--      <img id="img5" />-->
+        <!--      <img id="img6" />-->
       </div>
-      <p id="name"></p>
-      <!-- <h1><i class="fas fa-camera-retro"></i></h1>
-      <h1 class="a"><i class="fas fa-camera-retro"></i></h1> -->
-
-
-<!--      <img id="img1"/>-->
-<!--      <img id="img2"/>-->
-<!--      <img id="img3"/>-->
-<!--      <img id="img4"/>-->
-<!--      <img id="img5" />-->
-<!--      <img id="img6" />-->
-    </div>
 
 
 
@@ -542,14 +598,14 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2><span class="changeColor">개발자</span> 추천</h2>
-        <p>우리 개발자들이 <span class="changeColor">추천</span>이예요!</p>
+        <p>우리 개발자들이 <span class="changeColor">추천</span>해요!</p>
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal('하울의움직이는성.png' , '하울의 움직이는 성')">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal()">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""
+              <img src="assets/img/developer/다인.png" class="img-fluid" alt=""
               />
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
@@ -565,11 +621,11 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal()">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
               <img
-                      src="assets/img/team/team-2.jpg"
+                      src="assets/img/developer/수빈.png"
                       class="img-fluid"
                       alt=""
               />
@@ -587,11 +643,32 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal()">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
+            <div class="member-img">
+              <img
+                      src="assets/img/developer/민교.png"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>곽민교</h4>
+              <span>Backend developer / INFP</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal()">
           <div class="member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
               <img
-                      src="assets/img/team/team-3.jpg"
+                      src="assets/img/developer/우진.png"
                       class="img-fluid"
                       alt=""
               />
@@ -609,27 +686,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="400">
-            <div class="member-img">
-              <img
-                      src="assets/img/team/team-4.jpg"
-                      class="img-fluid"
-                      alt=""
-              />
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>곽민교</h4>
-              <span>Backend developer / INFP</span>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -706,5 +763,17 @@
 
 <!--weather.js-->
 <script async src="assets/js/weather.js"></script>
+
+<!--modal 창-->
+<script>
+  function modal(){
+    document.getElementById("modalWin").style.display="block";
+  }
+
+
+
+
+</script>
+
 </body>
 </html>
