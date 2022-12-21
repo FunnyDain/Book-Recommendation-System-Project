@@ -21,9 +21,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/board")
 public class BoardController {
-
-
-
     private final BoardService boardService;        //**생성자 주입방식으로 의존성을 주입받게 됌
     @GetMapping("/home")
     public String boardhome() {
@@ -33,7 +30,7 @@ public class BoardController {
 
     @GetMapping("/save")
     public String saveForm(){
-        return "redirect:/board/save.html";
+        return "save";
     }
 
     //2. input의 여러 request를 한번에 dto라는 클래스 객체에 담아서 controller에 넘어오는 작업이 필요함
@@ -47,12 +44,12 @@ public class BoardController {
     }
 
     //data, 즉, 전체목록을 db로부터 가져와야함 => model객체를 사용
-    @GetMapping("/board/list")
+    @GetMapping("/")
     public String findAll(Model model){
         // DB에서 전체 게시글 데이터를 가져와서 list.html에 보여준다.
         List<BoardDTO> boardDTOList = boardService.findAll();       //여러개를 가져와야하므로 List형태
         model.addAttribute("boardList", boardDTOList);           //가져온 데이터를 "boardList" 이름으로 모델 객체에 담아야함
-        return "redirect:/board/list.html";
+        return "list";
     }
 
     //상세조회를 위해 id값을 받아와야함
