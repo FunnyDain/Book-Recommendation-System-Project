@@ -1,0 +1,49 @@
+
+#boardTable{
+    line-height: 2rem;
+    margin-top: 15px;
+}
+
+.boardTitle{
+    text-align: center;
+    font-size: 14px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #ffc451;
+}
+
+.boardTitle:first-child{width: 10%;}
+.boardTitle:nth-child(2){width: 45%;}
+.boardTitle:nth-child(3){width: 15%;}
+.boardTitle:nth-child(4){width: 20%;}
+.boardTitle:last-child{width: 10%;}
+
+
+.writeButton{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 60px;
+    border: 2px solid #ffc451;
+    color: #ffc451;
+}
+.writeButton:hover{
+    transition: .3s;
+    border: 2px solid #ffc451;
+    background-color: #ffc451;
+    color: #fff;
+}
+
+#divPaging{
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+    width: 220px;
+}
