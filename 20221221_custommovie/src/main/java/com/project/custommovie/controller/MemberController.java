@@ -22,7 +22,10 @@ public class MemberController {
     private final MemberService memberService;
 
 
-
+    @GetMapping("/ranking/ranking")
+        public String rankhome() {
+            return "/ranking/ranking";
+        }
 
     //회원가입 페이지 출력 요청
     @GetMapping("/member/save")

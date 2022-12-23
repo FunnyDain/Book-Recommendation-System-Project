@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e5ebea1-18f2-48c8-8c53-25f715f36de5" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/java/com/project/custommovie/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/4월이야기.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/건축학개론.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/공조.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/과속스캔들.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/관상.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/국제시장.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/그것만이내세상.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/극한직업.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/꽃피는봄이오면.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/나우유씨미.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/나의소녀시대.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/너의결혼식.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/너의췌장을먹고싶어.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/다시봄.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/도둑들.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/도어락.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/럭키.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/마음이.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/말아톤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/말할수없는비밀.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/매드맥스.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/모가디슈.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/베테랑.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/변호인.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/봄날은간다.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/봄이가도.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/성난황소.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/소원.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/신데렐라.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/신세계.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/신의한수.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/싱크홀.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/써니.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/아저씨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/암살.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/양들의침묵.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/엽기적인그녀.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/완벽한타인.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/인셉션.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/인투더스톰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/장화홍련.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/존윅.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/지오스톰.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/친구.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/퀵.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/클래식.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/택시운전사.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/투모로우.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/트루먼쇼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/트와일라잇.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/플립.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/헬로우고스트.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_2_custommovie/src/main/resources/static/assets/img/movies/종합/화려한휴가.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_custommovie/src/main/java/com/project/custommovie/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_custommovie/src/main/java/com/project/custommovie/controller/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20221221_custommovie/src/main/resources/templates/ranking/ranking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20221221_custommovie/src/main/java/com/project/custommovie/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/20221221_custommovie/src/main/java/com/project/custommovie/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20221221_custommovie/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/20221221_custommovie/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custommovie/src/main/java/com/project/custommovie/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/custommovie/src/main/java/com/project/custommovie/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/머신러닝/server.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/머신러닝/server.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JDTRFUDgDpzA2kJus4jDwmHf6A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/github/Movie-Recommendation-System-Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="9e5ebea1-18f2-48c8-8c53-25f715f36de5" name="변경" comment="" />
+      <created>1671611643472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671611643472</updated>
+      <workItem from="1671611644620" duration="689000" />
+      <workItem from="1671667842479" duration="35000" />
+      <workItem from="1671669756968" duration="1589000" />
+      <workItem from="1671676187143" duration="1201000" />
+      <workItem from="1671678454348" duration="6846000" />
+      <workItem from="1671691088583" duration="57000" />
+      <workItem from="1671691154737" duration="125000" />
+      <workItem from="1671691289067" duration="1625000" />
+      <workItem from="1671695537809" duration="501000" />
+      <workItem from="1671696046416" duration="2377000" />
+      <workItem from="1671699068946" duration="177000" />
+      <workItem from="1671699351688" duration="97000" />
+      <workItem from="1671699455771" duration="648000" />
+      <workItem from="1671756451650" duration="358000" />
+      <workItem from="1671756815699" duration="95000" />
+      <workItem from="1671756945985" duration="1864000" />
+      <workItem from="1671759562872" duration="114000" />
+      <workItem from="1671759727136" duration="8000" />
+      <workItem from="1671760054262" duration="4731000" />
+      <workItem from="1671765648959" duration="70000" />
+      <workItem from="1671765727094" duration="96000" />
+      <workItem from="1671765832936" duration="62000" />
+      <workItem from="1671765928793" duration="232000" />
+      <workItem from="1671766171309" duration="158000" />
+      <workItem from="1671766359065" duration="273000" />
+      <workItem from="1671767292154" duration="95000" />
+      <workItem from="1671767429868" duration="1086000" />
+      <workItem from="1671769956525" duration="939000" />
+      <workItem from="1671770970677" duration="176000" />
+      <workItem from="1671771398525" duration="381000" />
+      <workItem from="1671771832167" duration="110000" />
+      <workItem from="1671771948714" duration="47000" />
+      <workItem from="1671772027627" duration="285000" />
+      <workItem from="1671772320065" duration="265000" />
+      <workItem from="1671772615628" duration="305000" />
+      <workItem from="1671772942492" duration="929000" />
+      <workItem from="1671773922075" duration="1814000" />
+      <workItem from="1671781276869" duration="9000" />
+      <workItem from="1671781410041" duration="7000" />
+      <workItem from="1671781501662" duration="249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
