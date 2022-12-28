@@ -1,0 +1,9 @@
+.r1{
+    color: #ffca2c;
+}
+.r2{
+    color: #adb5bd;
+}
+.r3{
+    color: #d3af71;
+}
