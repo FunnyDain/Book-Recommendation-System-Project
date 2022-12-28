@@ -1,0 +1,15 @@
+#loginTitle{
+    color:#ffc451;
+}
+
+.inputStyle{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ffc451;
+    border-radius: 0.375rem;
+    background-color: #0c0b09;
+}

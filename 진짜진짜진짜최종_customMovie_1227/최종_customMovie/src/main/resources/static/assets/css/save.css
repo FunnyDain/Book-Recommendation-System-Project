@@ -1,0 +1,41 @@
+
+#boardForm{
+    margin-top: 40px;
+    width:60%;
+}
+#boardForm input, #boardForm textarea {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 3px solid #eee;
+    /*background-color: #eee;*/
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+#topBox, #titleBox, #contentBox{
+    width: 100%;
+}
+
+#topBox{
+    display: flex;
+}
+
+#topLeftBox{
+    margin-right: 20px;
+}
+#topLeftBox, #topRightBox{
+    width: 50%;
+}
+
+.formTitle{
+    font-size: 0.9rem;
+    color:#0c0b09;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.writeButton{
+    margin-top:15px !important;
+}

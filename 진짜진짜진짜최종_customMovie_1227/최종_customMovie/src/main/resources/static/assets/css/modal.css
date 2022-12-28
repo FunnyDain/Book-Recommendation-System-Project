@@ -1,0 +1,133 @@
+
+/*모달(Modal)박스*/
+#modalWin{
+    width: 100%;    height: 100%;
+    margin: 0;
+    padding-top: 100px;
+    position: fixed;    left:0;     top:0;
+    z-index: 10;
+    display: none;      /*초기상태 보이지 않음*/
+    overflow: auto;
+    backgroud-color: #ccc;
+}
+
+/*모달(Modal)박스 내용*/
+.modal-content{
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin:auto;    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+    color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+}
+
+/*모달창 닫기 버튼*/
+.close{
+    color:white;
+    /*float: left;*/
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0 5px;
+    transition: .3s;
+}
+
+.close:hover{color:#000;}
+
+/*모달창 내용*/
+.modal-header{
+    padding: 2px 15px;
+    margin: 0;
+    background-color: #cda45e;
+    color:white;
+}
+
+
+/*모달창 등장 애니메이션*/
+.modalAni{animation:animate1 1 0.5s}
+@keyframes animate1 {
+    from{top:-300px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+
+
+/**/
+
+
+#slideOuterBox {  /*헤더 박스*/
+    width: 80%;
+    margin: 30px auto;
+    /* height: 100vh; */
+    position: relative;
+    overflow: hidden;    /*박스 공간에서만 슬라이드 보이기*/
+}
+
+#slideBox {    /*슬라이드 전체 박스*/
+    width:300%;  /*100% 이미지 3개*/
+    height: 100%;
+    display:flex; transition:1s;  /*각 슬라이드 이미지 가로 연속 배치 슬라이드 효과 */
+}
+
+.slide {     /*각 슬라이드 이미지*/
+    width: calc( 100% / 3);   /*박스 안에 3등분 폭*/
+    /* height: 100%; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.slideImg{
+    width: 100%;
+}
+/* .slide:nth-child(1) { background-image: url(assets/img/movies/종합/101마리의달마시안개.png);}
+.slide:nth-child(2)  { background-image: url(assets/img/movies/종합/13일의금요일.png);}
+.slide:nth-child(3)  { background-image: url(assets/img/movies/종합/4월이야기.jpg);} */
+
+.nav {  /*좌우버튼 공통*/
+    color:#fff; font-size: 5rem; width:50%; height:100%;
+    text-shadow:3px 3px 3px rgba(0,0,0,.3);
+    position:absolute; top:0;
+    display: flex; align-items: center;
+    cursor:pointer; opacity:0; transition: .5s;
+    z-index:2
+}
+.nav:hover { opacity:.7 }
+.left { left: 0; justify-content: flex-start }
+.right { right: 0; justify-content: flex-end }
+
+#circleBox {   /* 상단 서클버튼 박스*/
+    position: absolute; top:5%; left:50%;
+    transform:translateX(-50%);
+    display: flex; justify-content: center;
+    padding:10px; border-radius:20px;
+    background:rgba(0,0,0,.5);
+    z-index:3
+}
+.circle {   /*각 서클 버튼*/
+    width:10px; height:10px; margin-right:10px;
+    background:rgba(255,255,255,.6);
+    border-radius:50%;
+    cursor:pointer; transition:.5s
+}
+.circle:first-child { background-color:#fff; transform:scale(1.4) }
+.circle:last-child { margin-right:0 }
+
+
+@media screen and (max-width:800px) {
+    .nav { font-size:4rem }
+    .title { font-size:2rem }
+}
+
+@media screen and (max-width:500px) {
+    .nav { font-size:3rem }
+    .title { font-size:1.5rem }
+}

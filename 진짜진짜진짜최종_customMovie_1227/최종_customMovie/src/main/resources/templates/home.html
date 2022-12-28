@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <title>Gp Bootstrap Template - Index</title>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon"/>
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet"
+    />
+
+    <!-- Playfair Display Fonts -->
+    <!--Nanum Gothic Coding -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet"/>
+    <link
+            href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+    />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
+    <link
+            href="../assets/vendor/glightbox/css/glightbox.min.css"
+            rel="stylesheet"
+    />
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet"/>
+
+    <!--mbti.css-->
+    <link href="../assets/css/mbti.css" rel="stylesheet"/>
+
+    <!--weather.css-->
+    <link href="../assets/css/weather.css" rel="stylesheet"/>
+
+    <!--modal창-->
+    <link href="../assets/css/modal.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<!--=========== 모달창 ============-->
+<div id="modalWin" class="modal">
+    <!--Modal content-->
+    <div class="modal-content modalAni">
+
+        <div class="modal-header">
+            <span class="close" onclick="document.getElementById('modalWin').style.display='none'">x</span>
+        </div>
+        <!-- ======= Portfolio Details Section ======= -->
+        <div id="slideOuterBox">
+
+            <div id="slideBox">
+                <div class="slide">
+                    <img src="../assets/img/movies/종합/101마리의달마시안개.png" class="slideImg" id="devMovie1"/>
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/movies/종합/13일의금요일.png" class="slideImg" id="devMovie2"/>
+                </div>
+                <div class="slide">
+                    <img src="../assets/img/movies/종합/500일의썸머.png" class="slideImg" id="devMovie3"/>
+                </div>
+
+            </div>
+
+            <div class="nav left" onClick="slide(-1)">⟨</div>
+            <div class="nav right" onClick="slide(1)">⟩</div>
+
+            <div id="circleBox">
+                <div class="circle" onClick="circle(0)"></div>
+                <div class="circle" onClick="circle(1)"></div>
+                <div class="circle" onClick="circle(2)"></div>
+            </div>
+
+            <!--        &lt;!&ndash;타이틀 문자 박스&ndash;&gt;-->
+            <!--        <div id="titleBox">-->
+            <!--          <div class="title">Gallery Page No.1</div>-->
+            <!--          <div class="title">Gallery Page No.2</div>-->
+            <!--          <div class="title">Gallery Page No.3</div>-->
+            <!--        </div>-->
+
+        </div>
+
+    </div>
+</div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logportfolio-flterse-auto me-lg-0">
+            <a href="/member/home" id="logo">CMovie<span>.</span></a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li>
+                    <a class="nav-link scrollto active" href="#hero"
+                    >Recommendation <span style="padding-left: 20px"></span> |
+                    </a>
+                </li>
+                <li><a class="nav-link scrollto" href="#portfolio">mbti</a></li>
+                <li><a class="nav-link scrollto" href="#services">weather</a></li>
+                <li>
+                    <a class="nav-link scrollto" href="#team">developer</a>
+                </li>
+                <li><a class="nav-link scrollto" href="/ranking/ranking">ranking</a></li>
+                <li><a class="nav-link scrollto" href="/board/paging">board</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <span id="nick" class="get-started-btn2" th:text="${session.loginnickname}"></span>
+        <a href="/member/logout" class="get-started-btn1 scrollto">Logout</a>
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+        <div
+                class="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-delay="150"
+        >
+            <div class="col-xl-6 col-lg-8">
+                <h1>
+                    내가 만든 모든 영화는 <br/>
+                    같은 영화의 다른 챕터들이다<span>.</span>
+                </h1>
+                <h2>- Robert Altman -</h2>
+                <p id="tell">영화를 좋아하는 당신을 위해 맞춤 영화를 준비했어요</p>
+            </div>
+        </div>
+
+        <div
+                class="row gy-4 mt-5 justify-content-center"
+                data-aos="zoom-in"
+                data-aos-delay="250"
+        >
+            <div class="col-xl-2 col-md-4">
+                <a href="#portfolio">
+                    <div class="icon-box">
+
+                        <i class="ri-store-line"></i>
+                        <h3><span style="font-family: 'Open Sans', sans-serif" ;>mbti</span>별 추천</h3>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-2 col-md-4">
+                <a href="#services">
+                    <div class="icon-box">
+
+                        <i class="ri-bar-chart-box-line"></i>
+                        <h3>날씨별 추천</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <a href="#team">
+                    <div class="icon-box">
+
+                        <i class="ri-calendar-todo-line"></i>
+                        <h3>개발자 추천</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <a href="sub1.html">
+                    <div class="icon-box">
+
+                        <i class="ri-paint-brush-line"></i>
+                        <h3>랭킹영화 추천</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-2 col-md-4">
+
+                <a href="/board/paging">
+                    <div class="icon-box">
+                        <i class="ri-database-2-line"></i>
+                        <h3>게시판</h3>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2><span class="changeColor">MBTI</span>별 추천</h2>
+                <p>당신의 MBTI는 <span class="changeColor" id="mbtiSession" th:text="${session.loginMbti}"></span>군요!</p>
+            </div>
+            <div class="mbtidesc">
+                <p>
+                    <i class="ri-check-double-line" style="color: #ffc451"></i>
+                    <span th:text="${session.loginMbtiDescription}"></span>
+                </p>
+                <p>
+                    <i class="ri-check-double-line" style="color: #ffc451"></i>
+                    이런당신에게 장르별로 아래와 같은 영화를 추천할게요!
+                </p>
+            </div>
+
+            <div
+                    class="row portfolio-container"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+            >
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap" id="mbtiImgBox1">
+                        <img
+                                src="../assets/img/portfolio/portfolio-1.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg1"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName1">App 1</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap" id="mbtiImgBox2">
+                        <img
+                                src="../assets/img/portfolio/portfolio-2.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg2"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName2">Web 3</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap" id="mbtiImgBox3">
+                        <img
+                                src="../assets/img/portfolio/portfolio-3.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg3"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName3">App 2</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap" id="mbtiImgBox4">
+                        <img
+                                src="../assets/img/portfolio/portfolio-4.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg4"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName4">Card 2</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap" id="mbtiImgBox5">
+                        <img
+                                src="../assets/img/portfolio/portfolio-5.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg5"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName5">Web 2</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap" id="mbtiImgBox6">
+                        <img
+                                src="../assets/img/portfolio/portfolio-6.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg6"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName6">App 3</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap" id="mbtiImgBox7">
+                        <img
+                                src="../assets/img/portfolio/portfolio-7.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg7"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName7">Card 1</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap" id="mbtiImgBox8">
+                        <img
+                                src="../assets/img/portfolio/portfolio-8.jpg"
+                                class="img-fluid"
+                                alt=""
+                                id="mbtiImg8"
+                        />
+                        <div class="portfolio-info">
+                            <h4 id="mbtiMovieName8">Card 3</h4>
+                            <p class="mbtiName" th:text="${session.loginMbti}"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2><span class="changeColor">날씨</span>별 추천</h2>
+                <p>오늘의 날씨는 <span class="changeColor" id="todayWeather"></span>이예요!</p>
+            </div>
+
+            <div id="weatherBox">
+                <h2 id="geo"></h2>
+                <!--      왼쪽 픽토그램-->
+                <div id="weatherFlexBox">
+                    <div id="weatherLeft">
+                        <h1 id="weatherImg"></h1>
+                    </div>
+                    <div id="weatherRight">
+                        <h2 id="weatherTemp"></h2>
+                        <p id="weatherDes"></p>
+                        <p id="weatherHum"></p>
+                        <p id="weatherWind"></p>
+                    </div>
+                </div>
+                <p id="name"></p>
+                <!-- <h1><i class="fas fa-camera-retro"></i></h1>
+                <h1 class="a"><i class="fas fa-camera-retro"></i></h1> -->
+
+
+                <!--      <img id="img1"/>-->
+                <!--      <img id="img2"/>-->
+                <!--      <img id="img3"/>-->
+                <!--      <img id="img4"/>-->
+                <!--      <img id="img5" />-->
+                <!--      <img id="img6" />-->
+            </div>
+
+
+            <div class="row">
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch"
+                        data-aos="zoom-in"
+                        data-aos-delay="100"
+                >
+                    <div class="icon-box"><img id="img1"/></div>
+                </div>
+
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                >
+                    <div class="icon-box"><img id="img2"/></div>
+                </div>
+
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                >
+                    <div class="icon-box"><img id="img3"/></div>
+                </div>
+
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                        data-aos="zoom-in"
+                        data-aos-delay="100"
+                >
+                    <div class="icon-box"><img id="img4"/></div>
+                </div>
+
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                >
+                    <div class="icon-box"><img id="img5"/></div>
+                </div>
+
+                <div
+                        class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                >
+                    <div class="icon-box"><img id="img6"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Team Section ======= -->
+
+    <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2><span class="changeColor">개발자</span> 추천</h2>
+                <p>우리 개발자들이 <span class="changeColor">추천</span>해요!</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal(1)">
+                    <div class="member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img">
+                            <img src="../assets/img/developer/다인.png" class="img-fluid" alt=""
+                            />
+                            <div class="social">
+                                <a href="https://github.com/FunnyDain"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>신다인</h4>
+                            <span>Backend developer / ISFJ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal(2)">
+                    <div class="member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img">
+                            <img
+                                    src="../assets/img/developer/수빈.png"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="social">
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>한수빈</h4>
+                            <span>Backend developer / ISFP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal(3)">
+                    <div class="member" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-img">
+                            <img
+                                    src="../assets/img/developer/민교.png"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="social">
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>곽민교</h4>
+                            <span>Backend developer / INFP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" onclick="modal(4)">
+                    <div class="member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-img">
+                            <img
+                                    src="../assets/img/developer/우진.png"
+                                    class="img-fluid"
+                                    alt=""
+                            />
+                            <div class="social">
+                                <a href="https://github.com/woojin0223"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>설우진</h4>
+                            <span>Backend developer / ISTJ</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div
+                        class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                ></div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+            <div class="text-center">
+                <h3>Tell me about Our Web-Site</h3>
+                <p>
+                    추천하고 싶은 영화나 웹사이트 개선사항을 알려주세요. 더 나은
+                    웹사이트로 보답하겠습니다.
+                </p>
+                <a class="cta-btn" href="/board/paging">게시판</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Cta Section -->
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Gp</span></strong
+        >. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<div id="preloader"></div>
+<a
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+><i class="bi bi-arrow-up-short"></i
+></a>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../assets/js/main.js"></script>
+
+<!--mbti -->
+<script async src="../assets/js/mbti.js"></script>
+
+<!--weather.js-->
+<script async src="../assets/js/weather.js"></script>
+
+<!--modal 창-->
+<script async src="../assets/js/modal.js"></script>
+
+</body>
+</html>
